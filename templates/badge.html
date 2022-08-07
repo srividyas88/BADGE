@@ -1,0 +1,22 @@
+
+  <!doctype html>
+<html>
+
+   <body>
+   
+      <table border = 1>
+         
+         {% for row in rows %}
+            <td>
+               <tr><img src={{ row["image"]}}> </tr>
+			    <tr>{{row["name"]}} </tr>
+				<tr>{{row["description"]}} </tr>
+            </td><br>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      
+   </body>
+</html>
+      

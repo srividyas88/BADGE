@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Badge Upload </title>  
+<style>
+ 
+</style>  
+<link rel="stylesheet" href="../static/style.css">  
+</head>    
+<body>    
+    <center> <h1> Badge Upload Form </h1> </center>   
+    <form action = "{{ url_for('badge') }}" method = "POST">
+        <div class="container">   
+            <label>Badge Name</label>   
+            <input type="text" id = "badgeName" name="badgeName" required>  
+            <label>Badge Description</label>   
+            <input type="text" id = "desc" name="desc">  
+	    <label>Upload badge </label><br>
+  	    <input type="file" id="img" name="img" accept="image/*"><br><br>
+            <label for="img">Eligible students</label><br>
+	    <textarea id="elgStudents" name="elgStudents" rows="6" cols="160" placeholder="Enter list of email ids comma separated"></textarea>
+<br>
+            <button type="submit">Save</button>    
+        </div>   
+    </form>     
+</body>     
+</html>  

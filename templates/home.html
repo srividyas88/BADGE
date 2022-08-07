@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="../static/style.css">  
+</head>
+<style>
+ img:hover {   
+        opacity: 0.7;   
+    }
+	  
+</style>
+   <body>
+	  
+	   <form action = "{{ url_for('uploadBadge') }}" method = "POST">
+	   <div class="container">   
+	   <button type="submit">Upload badge details</button> 
+	   </div>
+	   </form>  
+	   <form action = "{{ url_for('verifyBadge') }}" method = "POST">
+	   <div class="container">  
+	   <button type="submit">Check if the student is eligible for a badge</button>
+	   </div>
+	   </form>    
+	   
+
+
+      
+   </body>
+</html>

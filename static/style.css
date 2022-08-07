@@ -1,0 +1,47 @@
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: white;
+  background-image: url("C:\Users\USER\Desktop\BADGE\starBadge.png");
+}  
+button {   
+       background-color: light green;   
+       width: 50%;  
+        color: black;   
+        padding: 15px;   
+        margin: 80px 230px;   
+        border: none;   
+        cursor: pointer;   
+		text-align: center;
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text] , [type=file]{   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+
+        
+     
+ .container {   
+        padding: 25px; 		
+        background-color: lightblue; 
+		margin: 0;
+		
+    }   
+	
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
